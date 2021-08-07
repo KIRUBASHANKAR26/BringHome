@@ -1,0 +1,123 @@
+*{
+    overflow-x: hidden;
+}
+input.ant-input {
+    width:100% !important;
+    padding: 0.5rem;
+    border: 1px solid#162734;
+    outline: none;
+}
+input.ant-input:last-child{
+    margin-bottom: 0.85rem;
+}
+.showPassword-wrapper{
+    position: relative;
+}
+.showPassword{
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.ant-checkbox {
+    position: relative !important;
+    padding-left: 35px;
+    cursor: pointer;
+    top: 7px;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .ant-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .ant-checkbox-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px !important;
+    width: 22px !important;
+    border: 1px solid #000 !important;
+    border-radius: 2px !important;
+    background-color: #fff !important;
+    margin-right: 0.5rem !important;
+  }
+  .container:hover input ~ .ant-checkbox-inner {
+    background-color: #162734 !important;
+  }
+   .ant-form-item-explain.ant-form-item-explain-error div{
+       overflow-y: hidden;
+   }
+   .ant-checkbox-checked::after{
+    display: none !important;
+   }
+  .ant-checkbox input:checked ~ .ant-checkbox-inner:after {
+    display: block;
+  }
+  .ant-checkbox .ant-checkbox-inner:after {
+    left: 9px;
+    top: 1px;
+    width: 6px !important;
+    height: 14px !important;
+    border: 1px solid #162734 !important;
+    border-width: 0 3px 3px 0 !important;
+    -webkit-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+  }
+  .ant-form-item-explain.ant-form-item-explain-error{
+    color: rgb(224, 8, 8);
+    line-height: 1 !important;
+  }
+.ant-checkbox-checked .ant-checkbox-inner{
+    background: #fff !important;
+}
+.ant-checkbox + span{
+    width: 100% !important;
+}
+@media (min-width: 576px){
+    .ant-col-sm-offset-8 {
+        margin-left: 0 !important;
+    }
+    .ant-col-sm-16 {
+        display: block;
+        flex: 0 0 66.66666667%;
+        max-width: 84.666667% !important;
+    }
+}
+@media (max-width: 1023px){
+    .col-auto{
+        display: none;
+    }
+    .GlobalIcon{
+        margin-left:4rem;
+    }
+    .menu-button{
+        top: 29px !important;
+    }
+}
+@media (max-width:767px) {
+    .form-container h1{
+        margin-top: 2rem !important;
+    }
+    .form-container {
+        max-width: 60% !important;
+    }
+}
+@media (max-width:540) {
+    .form-container h1{
+        margin-top: 2rem !important;
+    }
+    .form-container {
+        max-width: 80% !important;
+    }
+}

@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.menu-button{
+    position: absolute;
+    top:24px;
+    left: 29px;
+}
+.loginBtn{
+    margin-left: 1rem;
+    padding: 8px 19px 9px 18px !important;
+    outline: none;
+    box-shadow: none !important;
+}
+.form-container{
+    width: 100%;
+    max-width: 45%;
+    margin: 0 auto;
+}
