@@ -5,12 +5,17 @@
 }
 body{
     min-height: 100vh;
-    overflow-x: hidden;
+    font-size: 17px;
+}
+.login-container{
+    width: 100%;
+    margin: 0;
 }
 .menu-button{
     position: absolute;
     top:24px;
     left: 29px;
+    z-index: 4;
 }
 .loginBtn{
     margin-left: 1rem;

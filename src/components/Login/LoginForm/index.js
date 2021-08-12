@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import { Form, Input, Checkbox } from 'antd';
 import styled from 'styled-components';
 import './style.css';
 import { LockOutlined,UnlockOutlined } from '@ant-design/icons';
-import "antd/dist/antd.css";
+import 'antd/dist/antd.css';
 
 
 
@@ -50,6 +50,8 @@ const tailFormItemLayout = {
 const Loginform = () => {
   const [showPassword, setshowPassword] = useState(false);
   const [form] = Form.useForm();
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
 
   const handelshowPassword = () => {
     setshowPassword(!showPassword);
@@ -90,7 +92,7 @@ const Loginform = () => {
           },
         ]}
       >
-        <Input placeholder="E-mail"/>
+        <Input ref={ emailRef } placeholder="E-mail"/>
       </Form.Item>
       <Form.Item
         placeholder="Password"
@@ -102,7 +104,7 @@ const Loginform = () => {
            },
          ]}>
          <div className="showPassword-wrapper">
-             <Input type={showPassword ? "text" : "password"} placeholder="Password"/>
+             <Input ref={ passwordRef }type={showPassword ? "text" : "password"} placeholder="Password"/>
              <span className="showPassword" onClick={handelshowPassword}>
                  {
                      showPassword?<UnlockOutlined/>:<LockOutlined/>
@@ -121,8 +123,8 @@ const Loginform = () => {
         ]}
         {...tailFormItemLayout}
       >
-        <Checkbox style={{lineHeight: "2.5"}}>
-        I agree to Brinks Home<a href="/#">Terms of Service</a>
+        <Checkbox style={{lineHeight: "2"}}>
+        I agree to Brinks Home<a href="/#"> Terms of Service</a>
         </Checkbox>
       </Form.Item>
       <Form.Item
@@ -136,8 +138,8 @@ const Loginform = () => {
         ]}
         {...tailFormItemLayout}
       >
-        <Checkbox style={{lineHeight: "2.5"}}>
-        I accept Brinks Home use of my data for the service and everything else described in the <a href="/#">Privacy Policy</a>
+        <Checkbox style={{lineHeight: "2"}}>
+        I accept Brinks Home use of my data for the service and everything else described in the <a href="/#"> Privacy Policy</a>
         </Checkbox>
       </Form.Item>
       <Form.Item {...tailFormItemLayout}>

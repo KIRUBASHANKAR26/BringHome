@@ -7,15 +7,15 @@ input.ant-input {
     border: 1px solid#162734;
     outline: none;
 }
-input.ant-input:last-child{
-    margin-bottom: 0.85rem;
-}
+/* input.ant-input:last-child{
+    margin-bottom: 0.75rem;
+} */
 .showPassword-wrapper{
     position: relative;
 }
 .showPassword{
     position: absolute;
-    top: 4px;
+    top: 8px;
     right: 8px;
     cursor: pointer;
 }
@@ -113,7 +113,7 @@ input.ant-input:last-child{
         max-width: 60% !important;
     }
 }
-@media (max-width:540) {
+@media (max-width:540px) {
     .form-container h1{
         margin-top: 2rem !important;
     }
