@@ -1,15 +1,13 @@
-*{
-    overflow-x: hidden;
-}
+
 input.ant-input {
     width:100% !important;
     padding: 0.5rem;
     border: 1px solid#162734;
     outline: none;
-}
+} 
 /* input.ant-input:last-child{
     margin-bottom: 0.75rem;
-} */
+}  */
 .showPassword-wrapper{
     position: relative;
 }
